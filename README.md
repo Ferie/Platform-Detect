@@ -1,6 +1,6 @@
 # Platform Detect
 
-These repositories is develop to identify the platform and the device that the user is using while visiting a website by providing the object ```platform_detect``` that contains the information about the device.
+This repository is develop to identify the platform and the device that the user is using while visiting a website by providing the object ```platform_detect``` that contains the information about the device.
 
 ## Usage
 
