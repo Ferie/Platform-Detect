@@ -14,9 +14,11 @@
  * 7. Added "iPad" check
  * 8. Added "iPod" check
  * 9. Added "Safari" check
- * 10. Added "Opera Mini" check
- * 11. Added "Kindle Fire" check
- * 12. Added "Nokia" check
+ * 10. Added "Opera" check
+ * 11. Added "Opera Mini" check
+ * 12. Added "Firefox" check
+ * 13. Added "Kindle Fire" check
+ * 14. Added "Nokia" check
  */
 
 var userAgent = navigator.userAgent || navigator.vendor || window.opera || navigator.platform;
@@ -30,7 +32,7 @@ platform_detect.isMobile = (function (browserUserAgent) {
 
 platform_detect.isAndroid = /Android/i.test(userAgent);
 
-platform_detect.isBlackBerry = /BlackBerry/i.test(userAgent);
+platform_detect.isBlackBerry = /BlackBerry|BB10/i.test(userAgent);
 
 platform_detect.isIEMobile = /Windows Phone|IEMobile/i.test(userAgent);
 
@@ -67,6 +69,10 @@ platform_detect.isIpod = /iPod/i.test(userAgent);
 platform_detect.isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
 
 platform_detect.isOperaMini = /Opera Mini/i.test(userAgent);
+
+platform_detect.isOpera = /Opera|OPR/i.test(userAgent);
+
+platform_detect.isFirefox = /Firefox/i.test(userAgent);
 
 platform_detect.isKindleFire = /Kindle Fire|Silk|KFAPWA|KFSOWI|KFJWA|KFJWI|KFAPWI|KFAPWI|KFOT|KFTT|KFTHWI|KFTHWA|KFASWI|KFTBWI|KFMEWI|KFFOWI|KFSAWA|KFSAWI|KFARWI/i.test(userAgent);
 
